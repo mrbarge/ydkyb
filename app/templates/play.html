@@ -1,0 +1,18 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>you dont know your backlog</h1>
+    {% if resultmsg %}
+    <h2>Result: {{resultmsg}}</h2>
+    {% endif %}
+    <center>
+	what game do you own<br/>
+	    <form action="" method="post">
+		{% for choice in choices %}
+		<button type="submit" name="answer" value="{{choice[0]}}"><img src="{{choice[2]}}"></button>	
+		{% endfor %}
+	    </form>
+    </center>
+  </body>
+</html>
