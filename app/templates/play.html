@@ -1,10 +1,23 @@
 <html>
   <head>
+<style>
+.gabeframe {
+
+    background:url('static/gabe.jpg') no-repeat center;
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+    border-radius: 20px;
+    padding:10px;
+    width: 300px;
+    height: 250px;
+    background-size:{{scale}}%;
+}
+</style>
   </head>
   <body>
     <h1>you dont know your backlog</h1>
     {% if resultmsg %}
     <h2>Result: {{resultmsg}}</h2>
+    <div class="gabeframe"></div>
     {% endif %}
     <center>
 	what game do you own<br/>
