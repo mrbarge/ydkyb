@@ -20,10 +20,6 @@ def index():
 	else:
 		return render_template('index.html')
 
-@app.route('/gabe')
-def gabe():
-        return render_template('gabe.html')
-
 @app.route('/play',methods=['GET','POST'])
 def play():
 	if request.method == 'GET':
